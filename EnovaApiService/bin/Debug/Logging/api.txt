@@ -1,0 +1,984 @@
+2019-11-22 17:49:51,170
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 17:49:51,186
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 17:51:36,901
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 17:51:36,923
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 18:12:26,025
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 18:12:26,035
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 18:13:02,042
+=======================
+Booting: Loading API configuration
+
+2019-11-22 18:13:02,058
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 18:13:02,058
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 18:29:22,507
+=======================
+Booting: Loading API configuration
+
+2019-11-22 18:29:22,517
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 18:29:22,561
+=======================
+System.IO.FileNotFoundException: Nie mo¿na za³adowaæ pliku lub zestawu 'Soneta.Business, Version=1908.0.1.380, Culture=neutral, PublicKeyToken=a19fc6236fd34393' lub jednej z jego zale¿noœci. Nie mo¿na odnaleŸæ okreœlonego pliku.
+Nazwa pliku: 'Soneta.Business, Version=1908.0.1.380, Culture=neutral, PublicKeyToken=a19fc6236fd34393'
+   w EnovaApiService.Enova.EnovaClient.Connect()
+   w EnovaApiService.BootProcedures.EnovaBootProcedure.OnStart() w D:\ABAK\EnovaApiService\EnovaApiService\BootProcedures\EnovaBootProcedure.cs:wiersz 15
+   w EnovaApiService.CoreService.OnStart(String[] args) w D:\ABAK\EnovaApiService\EnovaApiService\CoreService.cs:wiersz 46
+
+=== Informacje o stanie sprzed powi¹zania ===
+DZIENNIK: DisplayName = Soneta.Business, Version=1908.0.1.380, Culture=neutral, PublicKeyToken=a19fc6236fd34393
+ (Fully-specified)
+DZIENNIK: Appbase = file:///D:/ABAK/EnovaApiService/EnovaApiService/bin/Debug/
+DZIENNIK: Initial PrivatePath = NULL
+Zestaw wywo³uj¹cy: EnovaApiService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+===
+DZIENNIK: to powi¹zanie zaczyna siê w kontekœcie ³adowania default.
+DZIENNIK: u¿ycie pliku konfiguracji aplikacji: D:\ABAK\EnovaApiService\EnovaApiService\bin\Debug\EnovaApiService.exe.Config
+DZIENNIK: u¿ycie pliku konfiguracji hosta: 
+DZIENNIK: u¿ycie pliku konfiguracji komputera z C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+DZIENNIK: odwo³anie po zastosowaniu zasad: Soneta.Business, Version=1908.0.1.380, Culture=neutral, PublicKeyToken=a19fc6236fd34393
+DZIENNIK: próba pobrania nowego adresu URL file:///D:/ABAK/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business.DLL.
+DZIENNIK: próba pobrania nowego adresu URL file:///D:/ABAK/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business/Soneta.Business.DLL.
+DZIENNIK: próba pobrania nowego adresu URL file:///D:/ABAK/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business.EXE.
+DZIENNIK: próba pobrania nowego adresu URL file:///D:/ABAK/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business/Soneta.Business.EXE.
+
+
+2019-11-22 18:32:27,817
+=======================
+Booting: Loading API configuration
+
+2019-11-22 18:32:27,828
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 18:32:31,730
+=======================
+System.IO.FileNotFoundException: Nie mo¿na za³adowaæ pliku lub zestawu 'Soneta.Business, Version=1908.0.1.380, Culture=neutral, PublicKeyToken=a19fc6236fd34393' lub jednej z jego zale¿noœci. Nie mo¿na odnaleŸæ okreœlonego pliku.
+Nazwa pliku: 'Soneta.Business, Version=1908.0.1.380, Culture=neutral, PublicKeyToken=a19fc6236fd34393'
+   w EnovaApiService.Enova.EnovaClient.Connect()
+   w EnovaApiService.BootProcedures.EnovaBootProcedure.OnStart() w D:\ABAK\EnovaApiService\EnovaApiService\BootProcedures\EnovaBootProcedure.cs:wiersz 15
+   w EnovaApiService.CoreService.OnStart(String[] args) w D:\ABAK\EnovaApiService\EnovaApiService\CoreService.cs:wiersz 46
+
+=== Informacje o stanie sprzed powi¹zania ===
+DZIENNIK: DisplayName = Soneta.Business, Version=1908.0.1.380, Culture=neutral, PublicKeyToken=a19fc6236fd34393
+ (Fully-specified)
+DZIENNIK: Appbase = file:///D:/ABAK/EnovaApiService/EnovaApiService/bin/Debug/
+DZIENNIK: Initial PrivatePath = NULL
+Zestaw wywo³uj¹cy: EnovaApiService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+===
+DZIENNIK: to powi¹zanie zaczyna siê w kontekœcie ³adowania default.
+DZIENNIK: u¿ycie pliku konfiguracji aplikacji: D:\ABAK\EnovaApiService\EnovaApiService\bin\Debug\EnovaApiService.exe.Config
+DZIENNIK: u¿ycie pliku konfiguracji hosta: 
+DZIENNIK: u¿ycie pliku konfiguracji komputera z C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+DZIENNIK: odwo³anie po zastosowaniu zasad: Soneta.Business, Version=1908.0.1.380, Culture=neutral, PublicKeyToken=a19fc6236fd34393
+DZIENNIK: próba pobrania nowego adresu URL file:///D:/ABAK/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business.DLL.
+DZIENNIK: próba pobrania nowego adresu URL file:///D:/ABAK/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business/Soneta.Business.DLL.
+DZIENNIK: próba pobrania nowego adresu URL file:///D:/ABAK/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business.EXE.
+DZIENNIK: próba pobrania nowego adresu URL file:///D:/ABAK/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business/Soneta.Business.EXE.
+
+
+2019-11-22 18:32:45,241
+=======================
+Booting: Loading API configuration
+
+2019-11-22 18:32:45,251
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 18:33:51,131
+=======================
+Booting: Loading API configuration
+
+2019-11-22 18:33:51,142
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 18:35:05,954
+=======================
+Booting: Loading API configuration
+
+2019-11-22 18:35:05,964
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 18:35:40,623
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 19:50:08,211
+=======================
+Booting: Loading API configuration
+
+2019-11-22 19:50:08,222
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 19:50:14,053
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 19:51:13,157
+=======================
+Booting: Loading API configuration
+
+2019-11-22 19:51:13,168
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 19:51:15,416
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 19:56:13,997
+=======================
+Booting: Loading API configuration
+
+2019-11-22 19:56:14,007
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 19:56:16,349
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 19:57:49,991
+=======================
+Booting: Loading API configuration
+
+2019-11-22 19:57:50,001
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 19:57:52,356
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 20:01:38,739
+=======================
+Booting: Loading API configuration
+
+2019-11-22 20:01:38,749
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 20:01:40,922
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 20:02:35,200
+=======================
+Booting: Loading API configuration
+
+2019-11-22 20:02:35,210
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 20:02:37,598
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-22 20:04:40,878
+=======================
+Booting: Loading API configuration
+
+2019-11-22 20:04:40,888
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-22 20:04:43,091
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-23 11:44:57,877
+=======================
+Booting: Loading API configuration
+
+2019-11-23 11:44:57,905
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-23 11:45:08,664
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-23 11:53:47,854
+=======================
+Booting: Loading API configuration
+
+2019-11-23 11:53:47,868
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-23 11:53:50,263
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-23 11:55:39,171
+=======================
+Booting: Loading API configuration
+
+2019-11-23 11:55:39,181
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-23 11:55:41,429
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-23 12:02:11,560
+=======================
+Booting: Loading API configuration
+
+2019-11-23 12:02:11,572
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-23 12:02:13,929
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-23 12:03:34,698
+=======================
+Booting: Loading API configuration
+
+2019-11-23 12:03:34,709
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-23 12:03:36,947
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-23 12:08:08,961
+=======================
+Booting: Loading API configuration
+
+2019-11-23 12:08:08,971
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-23 12:08:11,086
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-27 18:04:07,976
+=======================
+Booting: Loading API configuration
+
+2019-11-27 18:04:08,027
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-27 18:04:20,451
+=======================
+Booting: Api Service Self Host Server
+
+2019-11-30 09:47:05,410
+=======================
+Booting: Loading API configuration
+
+2019-11-30 09:47:05,476
+=======================
+Booting: Initialize connection to Enova
+
+2019-11-30 09:47:16,121
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 19:03:30,139
+=======================
+Booting: Loading API configuration
+
+2019-12-10 19:03:30,169
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 19:03:42,614
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 19:17:50,860
+=======================
+Booting: Loading API configuration
+
+2019-12-10 19:17:50,869
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 19:17:54,169
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 19:30:44,556
+=======================
+Booting: Loading API configuration
+
+2019-12-10 19:30:44,567
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 19:30:47,155
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 19:32:12,967
+=======================
+Booting: Loading API configuration
+
+2019-12-10 19:32:12,979
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 19:32:15,402
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 19:37:15,751
+=======================
+Booting: Loading API configuration
+
+2019-12-10 19:37:15,761
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 19:37:18,259
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 19:51:48,872
+=======================
+Booting: Loading API configuration
+
+2019-12-10 19:51:48,872
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 19:51:51,374
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 19:54:13,339
+=======================
+Booting: Loading API configuration
+
+2019-12-10 19:54:13,349
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 19:54:16,197
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 19:59:47,714
+=======================
+Booting: Loading API configuration
+
+2019-12-10 19:59:47,724
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 19:59:50,240
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 20:05:37,489
+=======================
+Booting: Loading API configuration
+
+2019-12-10 20:05:37,500
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 20:05:42,199
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 20:07:57,215
+=======================
+Booting: Loading API configuration
+
+2019-12-10 20:07:57,226
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 20:08:01,405
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 21:05:16,944
+=======================
+Booting: Loading API configuration
+
+2019-12-10 21:05:16,954
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 21:05:21,831
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 21:09:56,037
+=======================
+Booting: Loading API configuration
+
+2019-12-10 21:09:56,053
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 21:09:59,708
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 21:13:45,669
+=======================
+Booting: Loading API configuration
+
+2019-12-10 21:13:45,680
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 21:13:47,751
+=======================
+Booting: Api Service Self Host Server
+
+2019-12-10 21:14:04,136
+=======================
+Booting: Loading API configuration
+
+2019-12-10 21:14:04,146
+=======================
+Booting: Initialize connection to Enova
+
+2019-12-10 21:14:06,241
+=======================
+Booting: Api Service Self Host Server
+
+2020-10-06 21:16:38,840
+=======================
+Booting: Loading API configuration
+
+2020-10-06 21:16:38,853
+=======================
+Booting: Initialize connection to Enova
+
+2020-10-06 21:16:41,735
+=======================
+Booting: Api Service Self Host Server
+
+2020-10-06 21:27:13,228
+=======================
+Booting: Loading API configuration
+
+2020-10-06 21:27:13,241
+=======================
+Booting: Initialize connection to Enova
+
+2020-10-06 21:27:16,702
+=======================
+Booting: Api Service Self Host Server
+
+2020-10-06 21:31:58,221
+=======================
+Booting: Loading API configuration
+
+2020-10-06 21:31:58,232
+=======================
+Booting: Initialize connection to Enova
+
+2020-10-06 21:32:02,098
+=======================
+Booting: Api Service Self Host Server
+
+2020-10-06 21:48:53,578
+=======================
+Booting: Loading API configuration
+
+2020-10-06 21:48:53,591
+=======================
+Booting: Initialize connection to Enova
+
+2020-10-06 21:48:56,775
+=======================
+Booting: Api Service Self Host Server
+
+2020-10-06 21:53:51,824
+=======================
+Booting: Loading API configuration
+
+2020-10-06 21:53:51,836
+=======================
+Booting: Initialize connection to Enova
+
+2020-10-06 21:53:55,103
+=======================
+Booting: Api Service Self Host Server
+
+2020-10-28 21:00:00,000
+=======================
+Booting: Loading API configuration
+
+2020-10-28 21:00:00,011
+=======================
+Booting: Initialize connection to Enova
+
+2020-10-28 21:00:02,101
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-07 17:59:17,698
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 17:59:17,793
+=======================
+System.IO.FileNotFoundException: Nie mo¿na za³adowaæ pliku lub zestawu 'Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393' lub jednej z jego zale¿noœci. Nie mo¿na odnaleŸæ okreœlonego pliku.
+Nazwa pliku: 'Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393'
+   w EnovaApiService.AutoMapper.AutoMapperConfig.Common.ConfigureMappings(IMapperConfigurationExpression cfg)
+   w EnovaApiService.AutoMapper.AutoMapperConfig.ConfigureMappings(IMapperConfigurationExpression cfg) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\AutoMapper\AutoMapperConfig.cs:wiersz 9
+   w EnovaApiService.BootProcedures.AutoMapperBootProcedure.<>c.<OnStart>b__6_0(IMapperConfigurationExpression cfg) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\BootProcedures\AutoMapperBootProcedure.cs:wiersz 28
+   w AutoMapper.MapperConfiguration.Build(Action`1 configure)
+   w AutoMapper.MapperConfiguration..ctor(Action`1 configure)
+   w EnovaApiService.BootProcedures.AutoMapperBootProcedure.OnStart() w C:\Projekty\Abak\EnovaApiService\EnovaApiService\BootProcedures\AutoMapperBootProcedure.cs:wiersz 26
+   w EnovaApiService.CoreService.OnStart(String[] args) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\CoreService.cs:wiersz 47
+
+=== Informacje o stanie sprzed powi¹zania ===
+DZIENNIK: DisplayName = Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393
+ (Fully-specified)
+DZIENNIK: Appbase = file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/
+DZIENNIK: Initial PrivatePath = NULL
+Zestaw wywo³uj¹cy: EnovaApiService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+===
+DZIENNIK: to powi¹zanie zaczyna siê w kontekœcie ³adowania default.
+DZIENNIK: u¿ycie pliku konfiguracji aplikacji: C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\Debug\EnovaApiService.exe.Config
+DZIENNIK: u¿ycie pliku konfiguracji hosta: 
+DZIENNIK: u¿ycie pliku konfiguracji komputera z C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+DZIENNIK: odwo³anie po zastosowaniu zasad: Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business.DLL.
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business/Soneta.Business.DLL.
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business.EXE.
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business/Soneta.Business.EXE.
+
+
+2020-11-07 18:02:16,157
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 18:02:16,244
+=======================
+System.IO.FileNotFoundException: Nie mo¿na za³adowaæ pliku lub zestawu 'Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393' lub jednej z jego zale¿noœci. Nie mo¿na odnaleŸæ okreœlonego pliku.
+Nazwa pliku: 'Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393'
+   w EnovaApiService.AutoMapper.AutoMapperConfig.Common.ConfigureMappings(IMapperConfigurationExpression cfg)
+   w EnovaApiService.AutoMapper.AutoMapperConfig.ConfigureMappings(IMapperConfigurationExpression cfg) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\AutoMapper\AutoMapperConfig.cs:wiersz 9
+   w EnovaApiService.BootProcedures.AutoMapperBootProcedure.<>c.<OnStart>b__6_0(IMapperConfigurationExpression cfg) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\BootProcedures\AutoMapperBootProcedure.cs:wiersz 28
+   w AutoMapper.MapperConfiguration.Build(Action`1 configure)
+   w AutoMapper.MapperConfiguration..ctor(Action`1 configure)
+   w EnovaApiService.BootProcedures.AutoMapperBootProcedure.OnStart() w C:\Projekty\Abak\EnovaApiService\EnovaApiService\BootProcedures\AutoMapperBootProcedure.cs:wiersz 26
+   w EnovaApiService.CoreService.OnStart(String[] args) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\CoreService.cs:wiersz 47
+
+=== Informacje o stanie sprzed powi¹zania ===
+DZIENNIK: DisplayName = Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393
+ (Fully-specified)
+DZIENNIK: Appbase = file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/
+DZIENNIK: Initial PrivatePath = NULL
+Zestaw wywo³uj¹cy: EnovaApiService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+===
+DZIENNIK: to powi¹zanie zaczyna siê w kontekœcie ³adowania default.
+DZIENNIK: u¿ycie pliku konfiguracji aplikacji: C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\Debug\EnovaApiService.exe.Config
+DZIENNIK: u¿ycie pliku konfiguracji hosta: 
+DZIENNIK: u¿ycie pliku konfiguracji komputera z C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+DZIENNIK: odwo³anie po zastosowaniu zasad: Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business.DLL.
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business/Soneta.Business.DLL.
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business.EXE.
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business/Soneta.Business.EXE.
+
+
+2020-11-07 18:03:17,189
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 18:03:17,276
+=======================
+System.IO.FileNotFoundException: Nie mo¿na za³adowaæ pliku lub zestawu 'Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393' lub jednej z jego zale¿noœci. Nie mo¿na odnaleŸæ okreœlonego pliku.
+Nazwa pliku: 'Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393'
+   w EnovaApiService.AutoMapper.AutoMapperConfig.Common.ConfigureMappings(IMapperConfigurationExpression cfg)
+   w EnovaApiService.AutoMapper.AutoMapperConfig.ConfigureMappings(IMapperConfigurationExpression cfg) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\AutoMapper\AutoMapperConfig.cs:wiersz 9
+   w EnovaApiService.BootProcedures.AutoMapperBootProcedure.<>c.<OnStart>b__6_0(IMapperConfigurationExpression cfg) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\BootProcedures\AutoMapperBootProcedure.cs:wiersz 28
+   w AutoMapper.MapperConfiguration.Build(Action`1 configure)
+   w AutoMapper.MapperConfiguration..ctor(Action`1 configure)
+   w EnovaApiService.BootProcedures.AutoMapperBootProcedure.OnStart() w C:\Projekty\Abak\EnovaApiService\EnovaApiService\BootProcedures\AutoMapperBootProcedure.cs:wiersz 26
+   w EnovaApiService.CoreService.OnStart(String[] args) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\CoreService.cs:wiersz 47
+
+=== Informacje o stanie sprzed powi¹zania ===
+DZIENNIK: DisplayName = Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393
+ (Fully-specified)
+DZIENNIK: Appbase = file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/
+DZIENNIK: Initial PrivatePath = NULL
+Zestaw wywo³uj¹cy: EnovaApiService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+===
+DZIENNIK: to powi¹zanie zaczyna siê w kontekœcie ³adowania default.
+DZIENNIK: u¿ycie pliku konfiguracji aplikacji: C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\Debug\EnovaApiService.exe.Config
+DZIENNIK: u¿ycie pliku konfiguracji hosta: 
+DZIENNIK: u¿ycie pliku konfiguracji komputera z C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+DZIENNIK: odwo³anie po zastosowaniu zasad: Soneta.Business, Version=2010.0.1.0, Culture=neutral, PublicKeyToken=a19fc6236fd34393
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business.DLL.
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business/Soneta.Business.DLL.
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business.EXE.
+DZIENNIK: próba pobrania nowego adresu URL file:///C:/Projekty/Abak/EnovaApiService/EnovaApiService/bin/Debug/Soneta.Business/Soneta.Business.EXE.
+
+
+2020-11-07 18:05:23,882
+=======================
+Booting: Loading API configuration
+
+2020-11-07 18:05:23,894
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-07 18:05:32,263
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 18:05:32,550
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-07 18:05:33,042
+=======================
+System.AggregateException: Wyst¹pi³ przynajmniej jeden b³¹d. ---> System.ServiceModel.AddressAccessDeniedException: Protokó³ HTTP nie mo¿e zarejestrowaæ adresu URL http://+:9000/. U¿ywany proces nie ma praw dostêpu do przestrzeni nazw (aby uzyskaæ szczegó³owe informacje, zobacz http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Odmowa dostêpu
+   w System.Net.HttpListener.AddAllPrefixes()
+   w System.Net.HttpListener.Start()
+   w System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   w System.ServiceModel.Channels.CommunicationObject.EndOpen(IAsyncResult result)
+   w System.Web.Http.SelfHost.HttpSelfHostServer.OpenListenerComplete(IAsyncResult result)
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   w System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   w System.Threading.Tasks.Task.Wait()
+   w EnovaApiService.BootProcedures.ApiServiceHostBootProcedure.OnStart() w C:\Projekty\Abak\EnovaApiService\EnovaApiService\BootProcedures\ApiServiceHostBootProcedure.cs:wiersz 27
+   w EnovaApiService.CoreService.OnStart(String[] args) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\CoreService.cs:wiersz 47
+---> (Wyj¹tek wewnêtrzny #0) System.ServiceModel.AddressAccessDeniedException: Protokó³ HTTP nie mo¿e zarejestrowaæ adresu URL http://+:9000/. U¿ywany proces nie ma praw dostêpu do przestrzeni nazw (aby uzyskaæ szczegó³owe informacje, zobacz http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Odmowa dostêpu
+   w System.Net.HttpListener.AddAllPrefixes()
+   w System.Net.HttpListener.Start()
+   w System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   w System.ServiceModel.Channels.CommunicationObject.EndOpen(IAsyncResult result)
+   w System.Web.Http.SelfHost.HttpSelfHostServer.OpenListenerComplete(IAsyncResult result)<---
+
+
+2020-11-07 18:06:30,608
+=======================
+Booting: Loading API configuration
+
+2020-11-07 18:06:30,619
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-07 18:06:33,403
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 18:06:33,715
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-07 18:14:11,631
+=======================
+Booting: Loading API configuration
+
+2020-11-07 18:14:11,646
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-07 18:14:14,763
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 18:14:15,045
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-07 18:17:35,371
+=======================
+Booting: Loading API configuration
+
+2020-11-07 18:17:35,382
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-07 18:17:38,193
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 18:17:38,488
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-07 18:19:08,185
+=======================
+Booting: Loading API configuration
+
+2020-11-07 18:19:08,196
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-07 18:19:10,859
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 18:19:11,142
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-07 21:03:06,099
+=======================
+Booting: Loading API configuration
+
+2020-11-07 21:03:06,111
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-07 21:03:09,377
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 21:03:09,676
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-07 21:04:16,912
+=======================
+Booting: Loading API configuration
+
+2020-11-07 21:04:16,925
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-07 21:04:20,074
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 21:04:20,353
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-07 21:08:29,725
+=======================
+Booting: Loading API configuration
+
+2020-11-07 21:08:29,736
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-07 21:08:32,809
+=======================
+Booting: Initializing Automapper
+
+2020-11-07 21:08:33,105
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 08:21:49,493
+=======================
+Booting: Loading API configuration
+
+2020-11-08 08:21:49,503
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 08:21:53,549
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 08:21:53,831
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 10:14:45,337
+=======================
+Booting: Loading API configuration
+
+2020-11-08 10:14:45,349
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 10:14:48,365
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 10:14:48,661
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 10:59:14,203
+=======================
+Booting: Loading API configuration
+
+2020-11-08 10:59:14,214
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 10:59:18,443
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 10:59:18,747
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 11:04:04,063
+=======================
+Booting: Loading API configuration
+
+2020-11-08 11:04:04,082
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 11:04:07,938
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 11:04:08,244
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 17:55:47,663
+=======================
+Booting: Loading API configuration
+
+2020-11-08 17:55:47,674
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 17:55:51,206
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 17:55:51,525
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 18:35:38,324
+=======================
+Booting: Loading API configuration
+
+2020-11-08 18:35:38,344
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 18:35:41,878
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 18:35:42,191
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 18:51:40,081
+=======================
+Booting: Loading API configuration
+
+2020-11-08 18:51:40,093
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 18:51:43,069
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 18:51:43,382
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 18:57:17,127
+=======================
+Booting: Loading API configuration
+
+2020-11-08 18:57:17,139
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 18:57:20,661
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 18:57:20,958
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 19:20:06,106
+=======================
+Booting: Loading API configuration
+
+2020-11-08 19:20:06,120
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 19:20:09,411
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 19:20:09,733
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 19:52:28,612
+=======================
+Booting: Loading API configuration
+
+2020-11-08 19:52:28,626
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 19:52:31,918
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 19:52:32,235
+=======================
+Booting: Api Service Self Host Server
+
+2020-11-08 20:37:17,047
+=======================
+Booting: Loading API configuration
+
+2020-11-08 20:37:17,167
+=======================
+Booting: Initialize connection to Enova
+
+2020-11-08 20:37:20,717
+=======================
+Booting: Initializing Automapper
+
+2020-11-08 20:37:21,103
+=======================
+Booting: Api Service Self Host Server
+

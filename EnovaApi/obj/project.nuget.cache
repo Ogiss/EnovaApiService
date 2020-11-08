@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "fkS35hLV4oXcX8ExCOVDz0jX9M1Fc6DP2P2/aYs7hHkIiAhnXb2wUthnAoJQadcAFU7d5vpGsrIqqDp++5kaeA==",
+  "success": true,
+  "projectFilePath": "C:\\Projekty\\Abak\\EnovaApiService\\EnovaApi\\EnovaApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
