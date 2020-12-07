@@ -17,6 +17,7 @@ namespace EnovaApi.Models.CommercialDocument
         public decimal TotalValueTax { get; set; }
         public decimal TotalValueWithTax { get; set; }
         public string TotalValueWithTaxInWords { get; set; }
+        public string Description { get; set; }
         public IEnumerable<CommercialDocumentRow> Rows { get; set; }
         public IEnumerable<DocumentTaxRow> TaxesSummary { get; set; }
         public IEnumerable<DocumentPaymentRow> PaymentSummary { get; set; }

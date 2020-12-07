@@ -2,7 +2,6 @@ C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\log4net.config
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\EnovaApiService.exe.config
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\EnovaApiService.exe
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\AutoMapper.dll
-C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Enova.Api.dll
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\log4net.dll
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Newtonsoft.Json.dll
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Soneta.Start.dll
@@ -14,8 +13,6 @@ C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\System.Web.Http
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Unity.Abstractions.dll
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Unity.Container.dll
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Unity.Interception.dll
-C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Enova.Api.pdb
-C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\AutoMapper.pdb
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\AutoMapper.xml
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\log4net.xml
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Newtonsoft.Json.xml
@@ -31,3 +28,5 @@ C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\x64\Release\EnovaApiService
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\x64\Release\EnovaApiService.csproj.CoreCompileInputs.cache
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\x64\Release\EnovaApiService.csproj.CopyComplete
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\x64\Release\EnovaApiService.exe
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\EnovaApi.dll
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\EnovaApi.pdb

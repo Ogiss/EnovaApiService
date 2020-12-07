@@ -29,6 +29,8 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(d => d.ProductName, o => o.MapFrom(s => s.Towar.Nazwa))
                     .ForMember(d => d.Quantity, o => o.MapFrom(s => s.Ilosc.Value))
                     .ForMember(d => d.QuantityUnit, o => o.MapFrom(s => s.Ilosc.Symbol))
+                    .ForMember(d => d.QuantityTurnover, o => o.MapFrom(s => s.IloscNaObrotach.Value))
+                    .ForMember(d => d.QuantityTurnoverUnit, o => o.MapFrom(s => s.IloscNaObrotach.Symbol))
                     .ForMember(d => d.PriceWithoutTaxAfterDiscount, o => o.MapFrom(s => s.CenaNettoPoRabacie.Value))
                     .ForMember(d => d.TaxPercent, o => o.MapFrom(s => (decimal)s.Stawka.Procent))
                     .ForMember(d => d.TaxName, o => o.MapFrom(s => s.Stawka.ToString()))
@@ -60,7 +62,8 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(d => d.TotalValueWithTaxInWords, o => o.MapFrom(s => s.Suma.BruttoCy.Słownie))
                     .ForMember(d => d.Rows, o => o.MapFrom(s => s.Pozycje))
                     .ForMember(d => d.TaxesSummary, o => o.MapFrom(s => s.SumyVAT))
-                    .ForMember(d => d.PaymentSummary, o => o.MapFrom(s => s.Platnosci));
+                    .ForMember(d => d.PaymentSummary, o => o.MapFrom(s => s.Platnosci))
+                    .ForMember(s => s.Description, o => o.MapFrom(s => s.Opis));
             }
         }
     }
