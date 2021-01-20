@@ -184,6 +184,7 @@
     <Compile Include="Enova\EnovaClient.cs" />
     <Compile Include="Extensions\DtoConverterExtensions.cs" />
     <Compile Include="Framework\Helpers\IEnumerableExtensions.cs" />
+    <Compile Include="Framework\Helpers\Sql.cs" />
     <Compile Include="Infrastructure\InfrastructureSetup.cs" />
     <Compile Include="Controllers\SystemController.cs" />
     <Compile Include="CoreService.cs">

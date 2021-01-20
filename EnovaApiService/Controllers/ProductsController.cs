@@ -7,6 +7,9 @@ using System;
 using System.Threading.Tasks;
 using System.Web.Http;
 using EnovaApi.Models.Product;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using EnovaApiService.Framework.Helpers;
 
 namespace EnovaApiService.Controllers
 {
@@ -36,6 +39,37 @@ namespace EnovaApiService.Controllers
                     Rebate = worker.Rabat
                 });
             }
+        }
+
+        [HttpGet]
+        [Route("api/" + ResourcesNames.Products + "/" + ProductAssociationsNames.ModifiedPrices + "/{definitionGuid}/{stampFrom}/{stampTo}")]
+        public IHttpActionResult GetModifiedPrices(Guid definitionGuid, long stampFrom, long stampTo)
+        {
+            var prices = new List<Price>();
+
+            using (var connection = EnovaClient.Database.OpenConnection(Soneta.Business.App.DatabaseType.Operational))
+            {
+                var sql =
+                    $"SELECT t.Guid ProductGuid, d.Guid DefinitionGuid, c.NettoValue PriceWithoutTax, c.BruttoValue PriceWithTax " +
+                    $"FROM Ceny c INNER JOIN DefinicjeCen d ON d.ID = c.Definicja INNER JOIN Towary t ON t.ID = c.Towar " +
+                    $"WHERE d.Guid = '{definitionGuid}' AND CONVERT(BIGINT, c.Stamp) > {stampFrom} AND CONVERT(BIGINT, c.Stamp) <= {stampTo}";
+
+                using (var reader = (SqlDataReader)connection.ExecuteCommand(Soneta.Business.App.ExecuteMode.Reader, sql))
+                {
+                    while (reader.Read())
+                    {
+                        prices.Add(new Price
+                        {
+                            ProductGuid = Sql.Read<Guid>(reader, "ProductGuid"),
+                            DefinitionGuid = Sql.Read<Guid>(reader, "DefinitionGuid"),
+                            PriceWithoutTax = Sql.Read<decimal>(reader, "PriceWithoutTax"),
+                            PriceWithTax = Sql.Read<decimal>(reader, "PriceWithTax"),
+                        });
+                    }
+                }
+            }
+
+            return Ok(prices);
         }
     }
 }
