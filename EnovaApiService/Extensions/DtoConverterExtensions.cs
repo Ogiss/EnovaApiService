@@ -1,7 +1,9 @@
 ﻿using System;
 using AutoMapper;
 using EnovaApi.Models.CommercialDocument;
+using EnovaApi.Models.Customer;
 using EnovaApiService.Framework;
+using Soneta.CRM;
 using Soneta.Handel;
 
 namespace EnovaApiService.Extensions
@@ -13,6 +15,11 @@ namespace EnovaApiService.Extensions
         public static CommercialDocument ToDto(this DokumentHandlowy document)
         {
             return Mapper.Value.Map<CommercialDocument>(document);
+        }
+
+        public static Customer ToDto(this Kontrahent customer)
+        {
+            return Mapper.Value.Map<Customer>(customer);
         }
 
         public static DocumentCategory ToDto(this KategoriaHandlowa category)

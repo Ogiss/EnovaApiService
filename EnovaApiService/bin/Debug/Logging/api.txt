@@ -1062,3 +1062,171 @@ Booting: Initializing Automapper
 =======================
 Booting: Api Service Self Host Server
 
+2020-12-07 09:55:08,470
+=======================
+Booting: Loading API configuration
+
+2020-12-07 09:55:08,482
+=======================
+Booting: Initialize connection to Enova
+
+2020-12-07 09:55:11,741
+=======================
+Booting: Initializing Automapper
+
+2020-12-07 09:55:12,067
+=======================
+Booting: Api Service Self Host Server
+
+2020-12-11 17:25:02,968
+=======================
+Booting: Loading API configuration
+
+2020-12-11 17:25:02,979
+=======================
+Booting: Initialize connection to Enova
+
+2020-12-11 17:25:16,635
+=======================
+Booting: Loading API configuration
+
+2020-12-11 17:25:16,646
+=======================
+Booting: Initialize connection to Enova
+
+2020-12-11 17:25:20,207
+=======================
+Booting: Initializing Automapper
+
+2020-12-11 17:25:20,548
+=======================
+Booting: Api Service Self Host Server
+
+2020-12-11 17:34:36,148
+=======================
+Booting: Loading API configuration
+
+2020-12-11 17:34:36,159
+=======================
+Booting: Initialize connection to Enova
+
+2020-12-11 17:34:41,069
+=======================
+Booting: Initializing Automapper
+
+2020-12-11 17:34:41,397
+=======================
+Booting: Api Service Self Host Server
+
+2020-12-11 19:37:48,310
+=======================
+Booting: Loading API configuration
+
+2020-12-11 19:37:48,323
+=======================
+Booting: Initialize connection to Enova
+
+2020-12-11 19:37:51,836
+=======================
+Booting: Initializing Automapper
+
+2020-12-11 19:37:52,217
+=======================
+Booting: Api Service Self Host Server
+
+2021-01-20 19:44:09,690
+=======================
+Booting: Loading API configuration
+
+2021-01-20 19:44:09,704
+=======================
+Booting: Initialize connection to Enova
+
+2021-01-20 19:44:13,407
+=======================
+Booting: Initializing Automapper
+
+2021-01-20 19:44:13,761
+=======================
+Booting: Api Service Self Host Server
+
+2021-01-20 19:45:34,328
+=======================
+Booting: Loading API configuration
+
+2021-01-20 19:45:34,348
+=======================
+Booting: Initialize connection to Enova
+
+2021-01-20 19:45:37,560
+=======================
+Booting: Initializing Automapper
+
+2021-01-20 19:45:37,891
+=======================
+Booting: Api Service Self Host Server
+
+2021-01-20 19:46:23,528
+=======================
+Booting: Loading API configuration
+
+2021-01-20 19:46:23,540
+=======================
+Booting: Initialize connection to Enova
+
+2021-01-20 19:46:26,632
+=======================
+Booting: Initializing Automapper
+
+2021-01-20 19:46:26,955
+=======================
+Booting: Api Service Self Host Server
+
+2021-01-20 20:01:30,175
+=======================
+Booting: Loading API configuration
+
+2021-01-20 20:01:30,188
+=======================
+Booting: Initialize connection to Enova
+
+2021-01-20 20:01:33,368
+=======================
+Booting: Initializing Automapper
+
+2021-01-20 20:01:33,708
+=======================
+Booting: Api Service Self Host Server
+
+2021-01-20 20:02:41,171
+=======================
+Booting: Loading API configuration
+
+2021-01-20 20:02:41,185
+=======================
+Booting: Initialize connection to Enova
+
+2021-01-20 20:02:44,352
+=======================
+Booting: Initializing Automapper
+
+2021-01-20 20:02:44,685
+=======================
+Booting: Api Service Self Host Server
+
+2021-01-20 20:03:46,608
+=======================
+Booting: Loading API configuration
+
+2021-01-20 20:03:46,618
+=======================
+Booting: Initialize connection to Enova
+
+2021-01-20 20:03:49,781
+=======================
+Booting: Initializing Automapper
+
+2021-01-20 20:03:50,124
+=======================
+Booting: Api Service Self Host Server
+

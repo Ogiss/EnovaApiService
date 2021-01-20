@@ -160,6 +160,7 @@
     <Compile Include="Configuration\AppSettings.cs" />
     <Compile Include="Configuration\InvalidConfigurationException.cs" />
     <Compile Include="Controllers\CommercialDocumentController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\DokumentyHandloweController.cs" />
     <Compile Include="Controllers\KontrahenciController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />

@@ -1,5 +1,4 @@
-﻿using EnovaApi.Models.Address;
-using EnovaApi.Models.Common;
+﻿using EnovaApi.Models.Common;
 
 namespace EnovaApi.Models.Customer
 {
@@ -9,6 +8,7 @@ namespace EnovaApi.Models.Customer
         public string Name { get; set; }
         public string Nip { get; set; }
         public string Email { get; set; }
+        public int PaymentDeadlineInDays { get; set; }
         public Address.Address MainAddress { get; set; }
     }
 }

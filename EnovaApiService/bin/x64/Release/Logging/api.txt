@@ -62,3 +62,19 @@ Booting: Initializing Automapper
 =======================
 Booting: Api Service Self Host Server
 
+2020-12-07 14:23:54,149
+=======================
+Booting: Loading API configuration
+
+2020-12-07 14:23:54,165
+=======================
+Booting: Initialize connection to Enova
+
+2020-12-07 14:23:58,127
+=======================
+Booting: Initializing Automapper
+
+2020-12-07 14:23:58,550
+=======================
+Booting: Api Service Self Host Server
+

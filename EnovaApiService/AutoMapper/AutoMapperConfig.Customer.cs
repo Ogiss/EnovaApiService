@@ -17,6 +17,7 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(d => d.Name, o => o.MapFrom(s => s.Nazwa))
                     .ForMember(d => d.Nip, o => o.MapFrom(s => s.NIP))
                     .ForMember(d => d.Email, o => o.MapFrom(s => s.EMAIL))
+                    .ForMember(s => s.PaymentDeadlineInDays, o => o.MapFrom(s => s.Termin))
                     .ForMember(d => d.MainAddress, o => o.MapFrom(s => s.Adres));
             }
         }

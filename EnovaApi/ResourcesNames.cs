@@ -3,6 +3,7 @@
     public class ResourcesNames
     {
         public const string Products = "products";
+        public const string Customers = "customers";
         public const string CommercialDocuments = "commercialdocuments";
     }
 }
