@@ -73,43 +73,43 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Soneta.Business">
-      <HintPath>..\..\..\..\Soneta\enova365\Soneta.Business.dll</HintPath>
+      <HintPath>C:\Soneta\enova365\Soneta.Business.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Soneta.Core">
-      <HintPath>..\..\..\..\Soneta\enova365\Soneta.Core.dll</HintPath>
+      <HintPath>C:\Soneta\enova365\Soneta.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Soneta.CRM">
-      <HintPath>..\..\..\..\Soneta\enova365\Soneta.CRM.dll</HintPath>
+      <HintPath>C:\Soneta\enova365\Soneta.CRM.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Soneta.Deklaracje">
-      <HintPath>..\..\..\..\Soneta\enova365\Soneta.Deklaracje.dll</HintPath>
+      <HintPath>C:\Soneta\enova365\Soneta.Deklaracje.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Soneta.Handel">
-      <HintPath>..\..\..\..\Soneta\enova365\Soneta.Handel.dll</HintPath>
+      <HintPath>C:\Soneta\enova365\Soneta.Handel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Soneta.KadryPlace">
-      <HintPath>..\..\..\..\Soneta\enova365\Soneta.KadryPlace.dll</HintPath>
+      <HintPath>C:\Soneta\enova365\Soneta.KadryPlace.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Soneta.Kasa">
-      <HintPath>..\..\..\..\Soneta\enova365\Soneta.Kasa.dll</HintPath>
+      <HintPath>C:\Soneta\enova365\Soneta.Kasa.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Soneta.Ksiega">
-      <HintPath>..\..\..\..\Soneta\enova365\Soneta.Ksiega.dll</HintPath>
+      <HintPath>C:\Soneta\enova365\Soneta.Ksiega.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Soneta.Start, Version=1908.0.1.380, Culture=neutral, PublicKeyToken=a19fc6236fd34393, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Soneta\enova365\Soneta.Start.dll</HintPath>
+      <HintPath>C:\Soneta\enova365\Soneta.Start.dll</HintPath>
     </Reference>
     <Reference Include="Soneta.Types">
-      <HintPath>..\..\..\..\Soneta\enova365\Soneta.Types.dll</HintPath>
+      <HintPath>C:\Soneta\enova365\Soneta.Types.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
