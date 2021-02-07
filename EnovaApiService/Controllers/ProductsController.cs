@@ -1,4 +1,5 @@
-﻿using Enova.Api;
+﻿using Dapper;
+using Enova.Api;
 using EnovaApiService.Enova;
 using Soneta.Business;
 using Soneta.CRM;
@@ -42,7 +43,7 @@ namespace EnovaApiService.Controllers
         }
 
         [HttpGet]
-        [Route("api/" + ResourcesNames.Products + "/" + ProductAssociationsNames.ModifiedPrices + "/{definitionGuid}/{stampFrom}/{stampTo}")]
+        [Route("api/" + ResourcesNames.ProductsModifiedPrices + "/{definitionGuid}/{stampFrom}/{stampTo}")]
         public IHttpActionResult GetModifiedPrices(Guid definitionGuid, long stampFrom, long stampTo)
         {
             var prices = new List<Price>();
@@ -67,6 +68,7 @@ namespace EnovaApiService.Controllers
                         });
                     }
                 }
+
             }
 
             return Ok(prices);

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EnovaApi.Models.Product
 {
@@ -10,5 +8,10 @@ namespace EnovaApi.Models.Product
         public Guid DefinitionGuid { get; set; }
         public decimal PriceWithoutTax { get; set; }
         public decimal PriceWithTax { get; set; }
+
+        public override string ToString()
+        {
+            return $"Product guid:{ProductGuid}";
+        }
     }
 }

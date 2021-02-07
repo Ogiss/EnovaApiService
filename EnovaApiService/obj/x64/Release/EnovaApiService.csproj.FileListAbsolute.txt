@@ -30,3 +30,6 @@ C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\x64\Release\EnovaApiService
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\x64\Release\EnovaApiService.csproj.CoreCompileInputs.cache
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\x64\Release\EnovaApiService.csproj.CopyComplete
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\x64\Release\EnovaApiService.exe
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Dapper.dll
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Dapper.SqlBuilder.dll
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\x64\Release\Dapper.xml

@@ -1,0 +1,4 @@
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\Release\EnovaApiService.csprojAssemblyReference.cache
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\Release\EnovaApiService.csproj.CoreCompileInputs.cache
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\Release\EnovaApiService.exe
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\Release\EnovaApiService.pdb
