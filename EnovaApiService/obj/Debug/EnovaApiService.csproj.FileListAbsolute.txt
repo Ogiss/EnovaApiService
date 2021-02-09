@@ -64,3 +64,6 @@ C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\Debug\EnovaApiService.exe
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\obj\Debug\EnovaApiService.pdb
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\Debug\EnovaApi.dll
 C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\Debug\EnovaApi.pdb
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\Debug\Dapper.dll
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\Debug\Dapper.SqlBuilder.dll
+C:\Projekty\Abak\EnovaApiService\EnovaApiService\bin\Debug\Dapper.xml

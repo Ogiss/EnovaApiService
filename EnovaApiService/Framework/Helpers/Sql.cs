@@ -11,6 +11,11 @@ namespace EnovaApiService.Framework.Helpers
             try { FieldIndex = DataReader.GetOrdinal(FieldName); }
             catch { return default(T); }
 
+            return Read<T>(DataReader, FieldIndex);
+        }
+
+        public static T Read<T>(DbDataReader DataReader, int FieldIndex)
+        {
             if (DataReader.IsDBNull(FieldIndex))
             {
                 return default(T);
@@ -35,5 +40,6 @@ namespace EnovaApiService.Framework.Helpers
                 }
             }
         }
+
     }
 }

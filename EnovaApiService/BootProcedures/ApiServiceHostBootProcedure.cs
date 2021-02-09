@@ -20,7 +20,8 @@ namespace EnovaApiService.BootProcedures
 
             config.MapHttpAttributeRoutes();
 
-            config.Routes.MapHttpRoute("default", "api/{controller}/{id}", new { controller = "System", id = RouteParameter.Optional });
+            config.Routes.MapHttpRoute("default", "api/{controller}/{id}", 
+                new { controller = "System", id = RouteParameter.Optional });
 
             server = new HttpSelfHostServer(config);
             serverTask = server.OpenAsync();

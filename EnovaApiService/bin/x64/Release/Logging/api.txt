@@ -134,3 +134,61 @@ Booting: Initializing Automapper
 =======================
 Booting: Api Service Self Host Server
 
+2021-02-09 15:23:11,971
+=======================
+Booting: Loading API configuration
+
+2021-02-09 15:23:12,039
+=======================
+Booting: Initialize connection to Enova
+
+2021-02-09 15:23:19,934
+=======================
+Booting: Initializing Automapper
+
+2021-02-09 15:23:20,387
+=======================
+Booting: Api Service Self Host Server
+
+2021-02-09 15:23:21,147
+=======================
+System.AggregateException: Wyst¹pi³ przynajmniej jeden b³¹d. ---> System.ServiceModel.AddressAccessDeniedException: Protokó³ HTTP nie mo¿e zarejestrowaæ adresu URL http://+:9000/. U¿ywany proces nie ma praw dostêpu do przestrzeni nazw (aby uzyskaæ szczegó³owe informacje, zobacz http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Odmowa dostêpu
+   w System.Net.HttpListener.AddAllPrefixes()
+   w System.Net.HttpListener.Start()
+   w System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   w System.ServiceModel.Channels.CommunicationObject.EndOpen(IAsyncResult result)
+   w System.Web.Http.SelfHost.HttpSelfHostServer.OpenListenerComplete(IAsyncResult result)
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   w System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   w System.Threading.Tasks.Task.Wait()
+   w EnovaApiService.BootProcedures.ApiServiceHostBootProcedure.OnStart()
+   w EnovaApiService.CoreService.OnStart(String[] args)
+---> (Wyj¹tek wewnêtrzny #0) System.ServiceModel.AddressAccessDeniedException: Protokó³ HTTP nie mo¿e zarejestrowaæ adresu URL http://+:9000/. U¿ywany proces nie ma praw dostêpu do przestrzeni nazw (aby uzyskaæ szczegó³owe informacje, zobacz http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Odmowa dostêpu
+   w System.Net.HttpListener.AddAllPrefixes()
+   w System.Net.HttpListener.Start()
+   w System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   w System.ServiceModel.Channels.CommunicationObject.EndOpen(IAsyncResult result)
+   w System.Web.Http.SelfHost.HttpSelfHostServer.OpenListenerComplete(IAsyncResult result)<---
+
+
+2021-02-09 15:24:11,089
+=======================
+Booting: Loading API configuration
+
+2021-02-09 15:24:11,119
+=======================
+Booting: Initialize connection to Enova
+
+2021-02-09 15:24:23,257
+=======================
+Booting: Initializing Automapper
+
+2021-02-09 15:24:23,730
+=======================
+Booting: Api Service Self Host Server
+
