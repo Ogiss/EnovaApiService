@@ -1494,3 +1494,183 @@ Booting: Initializing Automapper
 =======================
 Booting: Api Service Self Host Server
 
+2021-02-09 17:01:11,193
+=======================
+Booting: Loading API configuration
+
+2021-02-09 17:01:11,209
+=======================
+Booting: Initialize connection to Enova
+
+2021-02-09 17:01:16,646
+=======================
+Booting: Initializing Automapper
+
+2021-02-09 17:01:17,053
+=======================
+Booting: Api Service Self Host Server
+
+2021-02-09 17:44:51,335
+=======================
+Booting: Loading API configuration
+
+2021-02-09 17:44:51,360
+=======================
+Booting: Initialize connection to Enova
+
+2021-02-09 17:44:55,426
+=======================
+Booting: Initializing Automapper
+
+2021-02-09 17:44:55,837
+=======================
+Booting: Api Service Self Host Server
+
+2021-02-09 18:00:09,300
+=======================
+Booting: Loading API configuration
+
+2021-02-09 18:00:09,312
+=======================
+Booting: Initialize connection to Enova
+
+2021-02-09 18:00:13,229
+=======================
+Booting: Initializing Automapper
+
+2021-02-09 18:00:13,771
+=======================
+Booting: Api Service Self Host Server
+
+2021-02-09 18:00:14,081
+=======================
+System.AggregateException: Wyst¹pi³ przynajmniej jeden b³¹d. ---> System.ServiceModel.AddressAccessDeniedException: Protokó³ HTTP nie mo¿e zarejestrowaæ adresu URL http://+:9000/. U¿ywany proces nie ma praw dostêpu do przestrzeni nazw (aby uzyskaæ szczegó³owe informacje, zobacz http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Odmowa dostêpu
+   w System.Net.HttpListener.AddAllPrefixes()
+   w System.Net.HttpListener.Start()
+   w System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   w System.ServiceModel.Channels.CommunicationObject.EndOpen(IAsyncResult result)
+   w System.Web.Http.SelfHost.HttpSelfHostServer.OpenListenerComplete(IAsyncResult result)
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   w System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   w System.Threading.Tasks.Task.Wait()
+   w EnovaApiService.BootProcedures.ApiServiceHostBootProcedure.OnStart() w C:\Projekty\Abak\EnovaApiService\EnovaApiService\BootProcedures\ApiServiceHostBootProcedure.cs:wiersz 28
+   w EnovaApiService.CoreService.OnStart(String[] args) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\CoreService.cs:wiersz 47
+---> (Wyj¹tek wewnêtrzny #0) System.ServiceModel.AddressAccessDeniedException: Protokó³ HTTP nie mo¿e zarejestrowaæ adresu URL http://+:9000/. U¿ywany proces nie ma praw dostêpu do przestrzeni nazw (aby uzyskaæ szczegó³owe informacje, zobacz http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Odmowa dostêpu
+   w System.Net.HttpListener.AddAllPrefixes()
+   w System.Net.HttpListener.Start()
+   w System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   w System.ServiceModel.Channels.CommunicationObject.EndOpen(IAsyncResult result)
+   w System.Web.Http.SelfHost.HttpSelfHostServer.OpenListenerComplete(IAsyncResult result)<---
+
+
+2021-02-09 18:02:13,030
+=======================
+Booting: Loading API configuration
+
+2021-02-09 18:02:13,040
+=======================
+Booting: Initialize connection to Enova
+
+2021-02-09 18:02:16,097
+=======================
+Booting: Initializing Automapper
+
+2021-02-09 18:02:16,437
+=======================
+Booting: Api Service Self Host Server
+
+2021-02-09 18:03:30,397
+=======================
+Booting: Loading API configuration
+
+2021-02-09 18:03:30,407
+=======================
+Booting: Initialize connection to Enova
+
+2021-02-09 18:03:33,896
+=======================
+Booting: Initializing Automapper
+
+2021-02-09 18:03:34,252
+=======================
+Booting: Api Service Self Host Server
+
+2021-02-10 19:58:12,175
+=======================
+Booting: Loading API configuration
+
+2021-02-10 19:58:12,188
+=======================
+Booting: Initialize connection to Enova
+
+2021-02-10 19:58:16,209
+=======================
+Booting: Initializing Automapper
+
+2021-02-10 19:58:16,581
+=======================
+Booting: Api Service Self Host Server
+
+2021-02-10 19:58:16,890
+=======================
+System.AggregateException: Wyst¹pi³ przynajmniej jeden b³¹d. ---> System.ServiceModel.AddressAccessDeniedException: Protokó³ HTTP nie mo¿e zarejestrowaæ adresu URL http://+:9000/. U¿ywany proces nie ma praw dostêpu do przestrzeni nazw (aby uzyskaæ szczegó³owe informacje, zobacz http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Odmowa dostêpu
+   w System.Net.HttpListener.AddAllPrefixes()
+   w System.Net.HttpListener.Start()
+   w System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   w System.ServiceModel.Channels.CommunicationObject.EndOpen(IAsyncResult result)
+   w System.Web.Http.SelfHost.HttpSelfHostServer.OpenListenerComplete(IAsyncResult result)
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   w System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   w System.Threading.Tasks.Task.Wait()
+   w EnovaApiService.BootProcedures.ApiServiceHostBootProcedure.OnStart() w C:\Projekty\Abak\EnovaApiService\EnovaApiService\BootProcedures\ApiServiceHostBootProcedure.cs:wiersz 28
+   w EnovaApiService.CoreService.OnStart(String[] args) w C:\Projekty\Abak\EnovaApiService\EnovaApiService\CoreService.cs:wiersz 47
+---> (Wyj¹tek wewnêtrzny #0) System.ServiceModel.AddressAccessDeniedException: Protokó³ HTTP nie mo¿e zarejestrowaæ adresu URL http://+:9000/. U¿ywany proces nie ma praw dostêpu do przestrzeni nazw (aby uzyskaæ szczegó³owe informacje, zobacz http://go.microsoft.com/fwlink/?LinkId=70353). ---> System.Net.HttpListenerException: Odmowa dostêpu
+   w System.Net.HttpListener.AddAllPrefixes()
+   w System.Net.HttpListener.Start()
+   w System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- Koniec œladu stosu wyj¹tków wewnêtrznych ---
+   w System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   w System.ServiceModel.Channels.CommunicationObject.EndOpen(IAsyncResult result)
+   w System.Web.Http.SelfHost.HttpSelfHostServer.OpenListenerComplete(IAsyncResult result)<---
+
+
+2021-02-10 20:22:25,443
+=======================
+Booting: Loading API configuration
+
+2021-02-10 20:22:25,454
+=======================
+Booting: Initialize connection to Enova
+
+2021-02-10 20:22:29,831
+=======================
+Booting: Initializing Automapper
+
+2021-02-10 20:22:30,475
+=======================
+Booting: Api Service Self Host Server
+
+2021-02-10 20:26:53,561
+=======================
+Booting: Loading API configuration
+
+2021-02-10 20:26:53,599
+=======================
+Booting: Initialize connection to Enova
+
+2021-02-10 20:26:56,973
+=======================
+Booting: Initializing Automapper
+
+2021-02-10 20:26:57,332
+=======================
+Booting: Api Service Self Host Server
+

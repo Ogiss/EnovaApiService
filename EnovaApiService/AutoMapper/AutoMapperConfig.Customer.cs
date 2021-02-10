@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using EnovaApi.Models.Common;
+using EnovaApi.Models.Customer;
 using Soneta.Business;
 using Soneta.CRM;
 
@@ -18,8 +19,24 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(d => d.Nip, o => o.MapFrom(s => s.NIP))
                     .ForMember(d => d.Email, o => o.MapFrom(s => s.EMAIL))
                     .ForMember(s => s.PaymentDeadlineInDays, o => o.MapFrom(s => s.Termin))
-                    .ForMember(d => d.MainAddress, o => o.MapFrom(s => s.Adres));
+                    .ForMember(d => d.MainAddress, o => o.MapFrom(s => s.Adres))
+                    .ForMember(d => d.WebAccount, o => o.ConvertUsing(new WebAccountConventer(), s => s));
             }
+
+            public class WebAccountConventer : IValueConverter<Kontrahent, WebAccount>
+            {
+                public WebAccount Convert(Kontrahent sourceMember, ResolutionContext context)
+                {
+                    return new WebAccount
+                    {
+                        Login = (string)sourceMember.Features["WWW_LOGIN"],
+                        Firstname = (string)sourceMember.Features["WWW_IMIE"],
+                        LastName = (string)sourceMember.Features["WWW_NAZWISKO"],
+                        Active = (bool?)sourceMember.Features["WWW_AKTYWNE"]
+                    };
+                }
+            }
+
         }
     }
 }
