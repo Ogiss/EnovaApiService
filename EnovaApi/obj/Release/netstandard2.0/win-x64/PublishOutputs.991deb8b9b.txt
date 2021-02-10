@@ -1,3 +1,0 @@
-C:\Projekty\Publish\EnovaApiService\EnovaApi.dll
-C:\Projekty\Publish\EnovaApiService\EnovaApi.deps.json
-C:\Projekty\Publish\EnovaApiService\EnovaApi.pdb

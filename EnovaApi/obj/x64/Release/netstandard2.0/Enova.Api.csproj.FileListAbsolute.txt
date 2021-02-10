@@ -1,8 +1,0 @@
-C:\Projekty\Abak\EnovaApiService\Enova.Api\bin\x64\Release\netstandard2.0\Enova.Api.deps.json
-C:\Projekty\Abak\EnovaApiService\Enova.Api\bin\x64\Release\netstandard2.0\Enova.Api.dll
-C:\Projekty\Abak\EnovaApiService\Enova.Api\bin\x64\Release\netstandard2.0\Enova.Api.pdb
-C:\Projekty\Abak\EnovaApiService\Enova.Api\obj\x64\Release\netstandard2.0\Enova.Api.AssemblyInfoInputs.cache
-C:\Projekty\Abak\EnovaApiService\Enova.Api\obj\x64\Release\netstandard2.0\Enova.Api.AssemblyInfo.cs
-C:\Projekty\Abak\EnovaApiService\Enova.Api\obj\x64\Release\netstandard2.0\Enova.Api.csproj.CoreCompileInputs.cache
-C:\Projekty\Abak\EnovaApiService\Enova.Api\obj\x64\Release\netstandard2.0\Enova.Api.dll
-C:\Projekty\Abak\EnovaApiService\Enova.Api\obj\x64\Release\netstandard2.0\Enova.Api.pdb
