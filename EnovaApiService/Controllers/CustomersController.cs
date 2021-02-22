@@ -15,7 +15,7 @@ namespace EnovaApiService.Controllers
     {
         [HttpGet]
         [Route("api/" + ResourcesNames.Customers + "/{guid}")]
-        public async Task<IHttpActionResult> Get(Guid guid)
+        public IHttpActionResult Get(Guid guid)
         {
             using (Session session = EnovaClient.Login.CreateSession(true, false))
             {
@@ -34,7 +34,7 @@ namespace EnovaApiService.Controllers
 
         [HttpGet]
         [Route("api/"+ ResourcesNames.CustomersByStamp + "/{stampFrom}/{stampTo}")]
-        public async Task<IHttpActionResult> GetByStamp(long stampFrom, long stampTo)
+        public IHttpActionResult GetByStamp(long stampFrom, long stampTo)
         {
             using (var connection = EnovaClient.Database.OpenConnection(Soneta.Business.App.DatabaseType.Operational))
             {
