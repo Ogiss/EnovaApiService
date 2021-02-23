@@ -3,6 +3,8 @@ using EnovaApi.Models.Common;
 using EnovaApi.Models.Customer;
 using Soneta.Business;
 using Soneta.CRM;
+using Soneta.Towary;
+using System.Linq;
 
 namespace EnovaApiService.AutoMapper
 {
@@ -20,7 +22,10 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(d => d.Email, o => o.MapFrom(s => s.EMAIL))
                     .ForMember(s => s.PaymentDeadlineInDays, o => o.MapFrom(s => s.Termin))
                     .ForMember(d => d.MainAddress, o => o.MapFrom(s => s.Adres))
-                    .ForMember(d => d.WebAccount, o => o.ConvertUsing(new WebAccountConventer(), s => s));
+                    .ForMember(d => d.WebAccount, o => o.ConvertUsing(new WebAccountConventer(), s => s))
+                    .ForMember(d => d.DiscountGroups, o => o.ConvertUsing(new DiscountGroupsConventer(), s => s));
+
+                cfg.CreateMap<CenaGrupowa, EnovaApi.Models.Customer.Customer.DiscountGroup>(MemberList.None);
             }
 
             public class WebAccountConventer : IValueConverter<Kontrahent, WebAccount>
@@ -37,6 +42,21 @@ namespace EnovaApiService.AutoMapper
                 }
             }
 
+            public class DiscountGroupsConventer : IValueConverter<Kontrahent, EnovaApi.Models.Customer.Customer.DiscountGroup[]>
+            {
+                public EnovaApi.Models.Customer.Customer.DiscountGroup[] Convert(Kontrahent sourceMember, ResolutionContext context)
+                {
+                    var cenyGrupowe = (SubTable<CenaGrupowa>)sourceMember.CenyGrupowe;
+
+                    return cenyGrupowe.Where(x=> x.Grupa == null && x.GrupaTowarowa != null).Select(x => new EnovaApi.Models.Customer.Customer.DiscountGroup
+                    {
+                        GroupId = x.GrupaTowarowa.ID,
+                        GroupGuid = x.GrupaTowarowa.Guid,
+                        Discount = x.Rabat,
+                        Enabled = x.RabatZdefiniowany
+                    }).ToArray();
+                }
+            }
         }
     }
 }
