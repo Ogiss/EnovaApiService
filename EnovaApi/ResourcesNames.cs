@@ -8,7 +8,6 @@
         public const string CustomersByStamp = Customers + "/bystamp";
         public const string CommercialDocuments = "commercialdocuments";
         public const string DiscountGroups = "discountgroups";
-        public const string DiscountGroupsByPriceDef = DiscountGroups + "/bypricedef";
         public const string DiscountGroupsByStamp = DiscountGroups + "/bystamp";
     }
 }
