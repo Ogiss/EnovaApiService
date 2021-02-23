@@ -182,6 +182,7 @@
     <Compile Include="Configuration\AppSettings.cs" />
     <Compile Include="Configuration\InvalidConfigurationException.cs" />
     <Compile Include="Controllers\CommercialDocumentController.cs" />
+    <Compile Include="Controllers\CustomerDiscountsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\DiscountGroupsController.cs" />
     <Compile Include="Controllers\DokumentyHandloweController.cs" />
@@ -205,6 +206,10 @@
     <Compile Include="Dto\Kasa\PlatnoscDto.cs" />
     <Compile Include="Dto\Kasa\SposobZaplatyDto.cs" />
     <Compile Include="Enova\EnovaClient.cs" />
+    <Compile Include="Enova\Repositories\DiscountGroup\DiscountGroupRepository.cs" />
+    <Compile Include="Enova\Repositories\DiscountGroup\DiscountGroupRepository.GetCustomerDiscountGroupIds.cs" />
+    <Compile Include="Enova\Repositories\DiscountGroup\DiscountGroupRepository.GetDiscountGroups.cs" />
+    <Compile Include="Enova\Repositories\DiscountGroup\IDiscountGroupRepository.cs" />
     <Compile Include="Extensions\DtoConverterExtensions.cs" />
     <Compile Include="Extensions\Soneta\ConnectionExtensions.cs" />
     <Compile Include="Extensions\Soneta\SonetaSqlReader.cs" />

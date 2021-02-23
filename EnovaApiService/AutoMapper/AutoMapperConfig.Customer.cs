@@ -24,8 +24,6 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(d => d.MainAddress, o => o.MapFrom(s => s.Adres))
                     .ForMember(d => d.WebAccount, o => o.ConvertUsing(new WebAccountConventer(), s => s))
                     .ForMember(d => d.DiscountGroups, o => o.ConvertUsing(new DiscountGroupsConventer(), s => s));
-
-                cfg.CreateMap<CenaGrupowa, EnovaApi.Models.Customer.Customer.DiscountGroup>(MemberList.None);
             }
 
             public class WebAccountConventer : IValueConverter<Kontrahent, WebAccount>

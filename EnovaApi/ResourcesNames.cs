@@ -9,5 +9,8 @@
         public const string CommercialDocuments = "commercialdocuments";
         public const string DiscountGroups = "discountgroups";
         public const string DiscountGroupsByStamp = DiscountGroups + "/bystamp";
+        public const string CustomerDiscounts = "customerdiscounts";
+        public const string CustomerDiscountsByStamp = CustomerDiscounts + "/bystamp";
+
     }
 }

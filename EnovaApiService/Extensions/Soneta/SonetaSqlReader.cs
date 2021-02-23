@@ -25,7 +25,6 @@ namespace EnovaApiService.Extensions.Soneta
                 {
                     yield return reader.GetRow<T>();
                 }
-
             }
         }
 
