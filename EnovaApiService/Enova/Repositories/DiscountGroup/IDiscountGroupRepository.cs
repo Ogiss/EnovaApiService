@@ -5,7 +5,7 @@ namespace EnovaApiService.Enova.Repositories
 {
     public interface IDiscountGroupRepository
     {
-        IEnumerable<int> GetCustomerDiscountIds(int priceDefId, long stampFrom, long stampTo);
+        IEnumerable<CustomerDiscountGroup> GetCustomerDiscount(int priceDefId, long stampFrom, long stampTo);
         DiscountGroup[] GetDiscountGroups(int priceDefId, long stampFrom, long stampTo);
     }
 }

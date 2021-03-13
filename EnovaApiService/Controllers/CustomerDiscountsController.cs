@@ -15,9 +15,9 @@ namespace EnovaApiService.Controllers
 
         [HttpGet]
         [Route("api/" + ResourcesNames.CustomerDiscountsByStamp + "/{priceDefId}/{stampFrom}/{stampTo}")]
-        public IHttpActionResult GetCustomerDiscountsIdsByStamp(int priceDefId, long stampFrom, long stampTo)
+        public IHttpActionResult GetCustomerDiscountsByStamp(int priceDefId, long stampFrom, long stampTo)
         {
-            return Ok(_discountGroupRepository.GetCustomerDiscountIds(priceDefId, stampFrom, stampTo));
+            return Ok(_discountGroupRepository.GetCustomerDiscount(priceDefId, stampFrom, stampTo));
         }
     }
 }

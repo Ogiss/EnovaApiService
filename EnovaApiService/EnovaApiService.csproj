@@ -207,7 +207,7 @@
     <Compile Include="Dto\Kasa\SposobZaplatyDto.cs" />
     <Compile Include="Enova\EnovaClient.cs" />
     <Compile Include="Enova\Repositories\DiscountGroup\DiscountGroupRepository.cs" />
-    <Compile Include="Enova\Repositories\DiscountGroup\DiscountGroupRepository.GetCustomerDiscountGroupIds.cs" />
+    <Compile Include="Enova\Repositories\DiscountGroup\DiscountGroupRepository.GetCustomerDiscountGroup.cs" />
     <Compile Include="Enova\Repositories\DiscountGroup\DiscountGroupRepository.GetDiscountGroups.cs" />
     <Compile Include="Enova\Repositories\DiscountGroup\IDiscountGroupRepository.cs" />
     <Compile Include="Extensions\DtoConverterExtensions.cs" />
