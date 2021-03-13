@@ -8,5 +8,6 @@ namespace EnovaApi.Models.DiscountGroup
         public Guid Guid { get; set; }
         public string Name { get; set; }
         public string Category { get; set; }
+        public long Stamp { get; set; }
     }
 }

@@ -1,9 +1,5 @@
 ﻿using Enova.Api;
-using EnovaApi.Models.DiscountGroup;
-using EnovaApiService.Enova;
 using EnovaApiService.Enova.Repositories;
-using EnovaApiService.Extensions.Soneta;
-using System.Linq;
 using System.Web.Http;
 
 namespace EnovaApiService.Controllers

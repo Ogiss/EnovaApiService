@@ -38,7 +38,7 @@ namespace EnovaApiService.Enova.Repositories
                     SELECT fd.ID, fd.Name, ('F.' + fd.Dictionary) Category, fd.Dictionary FROM FeatureDefs fd INNER JOIN FeatureDefIds ON fd.ID = FeatureDefIds.Id
                 )
                 ,DiscountGroups AS(
-                    SELECT d.Id, d.Guid, d.Value Name, d.Category FROM Dictionary d INNER JOIN FeatureDefsCTE fd ON d.Category = fd.Category
+                    SELECT d.Id, d.Guid, d.Value Name, d.Category, CONVERT(BIGINT, d.Stamp) Stamp FROM Dictionary d INNER JOIN FeatureDefsCTE fd ON d.Category = fd.Category
                     WHERE CONVERT(BIGINT, d.Stamp) > {stampFrom} AND CONVERT(BIGINT, d.Stamp) <= {stampTo}
                 )
                 SELECT* FROM DiscountGroups
