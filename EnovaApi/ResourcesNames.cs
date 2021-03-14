@@ -4,6 +4,7 @@
     {
         public const string Products = "products";
         public const string ProductsModifiedPrices = Products + "/modifiedprices";
+        public const string ProductsModifiedGuids = Products + "/modifiedguids";
         public const string Customers = "customers";
         public const string CustomersByStamp = Customers + "/bystamp";
         public const string CommercialDocuments = "commercialdocuments";

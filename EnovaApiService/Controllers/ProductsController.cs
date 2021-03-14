@@ -11,6 +11,8 @@ using EnovaApi.Models.Product;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using EnovaApiService.Framework.Helpers;
+using EnovaApiService.Extensions.Soneta;
+using System.Linq;
 
 namespace EnovaApiService.Controllers
 {
@@ -72,6 +74,31 @@ namespace EnovaApiService.Controllers
             }
 
             return Ok(prices);
+        }
+
+        [HttpGet]
+        [Route("api/" + ResourcesNames.ProductsModifiedGuids + "/{stampFrom}/{stampTo}")]
+        public IHttpActionResult GetModifiedProductsGuids(DateTime stampFrom, DateTime? stampTo)
+        {
+
+            var sql = $"SELECT SourceGuid Guid FROM ChangeInfos WHERE SourceTable = 'Towary' AND [Time] > '{stampFrom.ToString("yyyy-MM-dd HH:mm:ss.fff")}'";
+
+            if (stampTo.HasValue)
+            {
+                sql += $" AND [Time] <= '{stampTo.Value.ToString("yyyy-MM-dd HH:mm:ss.fff")}'";
+            }
+
+            using (var connection = EnovaClient.Database.OpenConnection(Soneta.Business.App.DatabaseType.Operational))
+            {
+                var guids = connection.Query<GuidRow>(sql).ToArray();
+
+                return Ok(guids.Select(x => x.Guid));
+            }
+        }
+
+        private class GuidRow
+        {
+            public Guid Guid { get; set; }
         }
     }
 }
