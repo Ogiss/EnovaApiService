@@ -1,4 +1,4 @@
-﻿namespace EnovaApiService.Enova.Repositories
+﻿namespace EnovaApiService.Enova.DiscountGroups.Repositories
 {
     partial class DiscountGroupRepository : IDiscountGroupRepository
     {

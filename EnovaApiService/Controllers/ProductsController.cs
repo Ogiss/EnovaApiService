@@ -5,6 +5,7 @@ using Soneta.Business;
 using Soneta.CRM;
 using Soneta.Towary;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
 using EnovaApi.Models.Product;
@@ -12,7 +13,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using EnovaApiService.Framework.Helpers;
 using EnovaApiService.Extensions.Soneta;
-using System.Linq;
+using EnovaApiService.Extensions;
 
 namespace EnovaApiService.Controllers
 {
@@ -93,6 +94,23 @@ namespace EnovaApiService.Controllers
                 var guids = connection.Query<GuidRow>(sql).ToArray();
 
                 return Ok(guids.Select(x => x.Guid));
+            }
+        }
+
+        [Route("api/" + ResourcesNames.Products + "/{guid}")]
+        public IHttpActionResult Get(Guid guid)
+        {
+            using (Session session = EnovaClient.Login.CreateSession(true, false))
+            {
+                TowaryModule tm = TowaryModule.GetInstance(session);
+                Towar towar = tm.Towary[guid];
+
+                if (towar != null)
+                {
+                    return Ok(towar.ToDto());
+                }
+
+                return NotFound();
             }
         }
 

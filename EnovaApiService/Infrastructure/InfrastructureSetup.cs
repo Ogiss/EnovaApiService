@@ -2,7 +2,7 @@
 using EnovaApiService.Framework;
 using EnovaApiService.Framework.Logging;
 using EnovaApiService.Infrastructure.Logging;
-using EnovaApiService.Enova.Repositories;
+using EnovaApiService.Enova.DiscountGroups.Repositories;
 
 namespace EnovaApiService.Infrastructure
 {

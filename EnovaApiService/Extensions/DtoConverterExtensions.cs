@@ -2,9 +2,11 @@
 using AutoMapper;
 using EnovaApi.Models.CommercialDocument;
 using EnovaApi.Models.Customer;
+using EnovaApi.Models.Product;
 using EnovaApiService.Framework;
 using Soneta.CRM;
 using Soneta.Handel;
+using Soneta.Towary;
 
 namespace EnovaApiService.Extensions
 {
@@ -20,6 +22,11 @@ namespace EnovaApiService.Extensions
         public static Customer ToDto(this Kontrahent customer)
         {
             return Mapper.Value.Map<Customer>(customer);
+        }
+
+        public static Product ToDto(this Towar product)
+        {
+            return Mapper.Value.Map<Product>(product);
         }
 
         public static DocumentCategory ToDto(this KategoriaHandlowa category)

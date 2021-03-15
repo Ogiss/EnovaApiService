@@ -1,5 +1,5 @@
 ﻿using Enova.Api;
-using EnovaApiService.Enova.Repositories;
+using EnovaApiService.Enova.DiscountGroups.Repositories;
 using System.Web.Http;
 
 namespace EnovaApiService.Controllers

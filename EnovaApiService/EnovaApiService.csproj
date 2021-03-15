@@ -135,6 +135,7 @@
     <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
@@ -172,6 +173,7 @@
     <Compile Include="AutoMapper\AutoMapperConfig.Common.cs" />
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
     <Compile Include="AutoMapper\AutoMapperConfig.Customer.cs" />
+    <Compile Include="AutoMapper\AutoMapperConfig.Product.cs" />
     <Compile Include="BootProcedureException.cs" />
     <Compile Include="BootProcedures\ApiServiceHostBootProcedure.cs" />
     <Compile Include="BootProcedures\AutoMapperBootProcedure.cs" />
@@ -205,11 +207,12 @@
     <Compile Include="Dto\Handel\PozycjaDokHanSaveDataDto.cs" />
     <Compile Include="Dto\Kasa\PlatnoscDto.cs" />
     <Compile Include="Dto\Kasa\SposobZaplatyDto.cs" />
+    <Compile Include="Enova\DiscountGroups\Repositories\DiscountGroupRepository.GetDiscountGroupFeatureDefs.cs" />
     <Compile Include="Enova\EnovaClient.cs" />
-    <Compile Include="Enova\Repositories\DiscountGroup\DiscountGroupRepository.cs" />
-    <Compile Include="Enova\Repositories\DiscountGroup\DiscountGroupRepository.GetCustomerDiscountGroup.cs" />
-    <Compile Include="Enova\Repositories\DiscountGroup\DiscountGroupRepository.GetDiscountGroups.cs" />
-    <Compile Include="Enova\Repositories\DiscountGroup\IDiscountGroupRepository.cs" />
+    <Compile Include="Enova\DiscountGroups\Repositories\DiscountGroupRepository.cs" />
+    <Compile Include="Enova\DiscountGroups\Repositories\DiscountGroupRepository.GetCustomerDiscountGroup.cs" />
+    <Compile Include="Enova\DiscountGroups\Repositories\DiscountGroupRepository.GetDiscountGroups.cs" />
+    <Compile Include="Enova\DiscountGroups\Repositories\IDiscountGroupRepository.cs" />
     <Compile Include="Extensions\DtoConverterExtensions.cs" />
     <Compile Include="Extensions\Soneta\ConnectionExtensions.cs" />
     <Compile Include="Extensions\Soneta\SonetaSqlReader.cs" />

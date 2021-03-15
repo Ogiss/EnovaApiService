@@ -2,7 +2,7 @@
 using EnovaApiService.Extensions.Soneta;
 using System.Linq;
 
-namespace EnovaApiService.Enova.Repositories
+namespace EnovaApiService.Enova.DiscountGroups.Repositories
 {
     partial class DiscountGroupRepository
     {

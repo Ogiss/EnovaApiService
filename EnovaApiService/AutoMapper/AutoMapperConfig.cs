@@ -10,6 +10,7 @@ namespace EnovaApiService.AutoMapper
             Address.ConfigureMappings(cfg);
             Customer.ConfigureMappings(cfg);
             CommercialDocument.ConfigureMappings(cfg);
+            Product.ConfigureMappings(cfg);
         }
     }
 }
