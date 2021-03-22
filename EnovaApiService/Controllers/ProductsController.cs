@@ -82,7 +82,7 @@ namespace EnovaApiService.Controllers
         public IHttpActionResult GetModifiedProductsGuids(DateTime stampFrom, DateTime? stampTo)
         {
 
-            var sql = $"SELECT ci.SourceGuid Guid FROM ChangeInfos ci WHERE ci.SourceTable = 'Towary' AND ci.[Time] > '{stampFrom.ToString("yyyy-MM-dd HH:mm:ss.fff")}'";
+            var sql = $"SELECT DISTINCT ci.SourceGuid Guid FROM ChangeInfos ci WHERE ci.SourceTable = 'Towary' AND ci.[Time] > '{stampFrom.ToString("yyyy-MM-dd HH:mm:ss.fff")}'";
 
             if (stampTo.HasValue)
             {
