@@ -82,7 +82,7 @@ namespace EnovaApiService.Controllers
         public IHttpActionResult GetModifiedProductsGuids(DateTime stampFrom, DateTime? stampTo)
         {
 
-            var sql = $"SELECT SourceGuid Guid FROM ChangeInfos WHERE SourceTable = 'Towary' AND [Time] > '{stampFrom.ToString("yyyy-MM-dd HH:mm:ss.fff")}'";
+            var sql = $"SELECT ci.SourceGuid Guid FROM ChangeInfos ci WHERE ci.SourceTable = 'Towary' AND ci.[Time] > '{stampFrom.ToString("yyyy-MM-dd HH:mm:ss.fff")}'";
 
             if (stampTo.HasValue)
             {
@@ -100,16 +100,23 @@ namespace EnovaApiService.Controllers
         [Route("api/" + ResourcesNames.Products + "/{guid}")]
         public IHttpActionResult Get(Guid guid)
         {
-            using (Session session = EnovaClient.Login.CreateSession(true, false))
+            try
             {
-                TowaryModule tm = TowaryModule.GetInstance(session);
-                Towar towar = tm.Towary[guid];
-
-                if (towar != null)
+                using (Session session = EnovaClient.Login.CreateSession(true, false))
                 {
-                    return Ok(towar.ToDto());
-                }
+                    TowaryModule tm = TowaryModule.GetInstance(session);
+                    Towar towar = tm.Towary[guid];
 
+                    if (towar != null)
+                    {
+                        return Ok(towar.ToDto());
+                    }
+
+                    return NotFound();
+                }
+            }
+            catch(Soneta.Business.RowNotFoundException)
+            {
                 return NotFound();
             }
         }

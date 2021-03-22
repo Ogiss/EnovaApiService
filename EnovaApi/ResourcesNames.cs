@@ -12,6 +12,5 @@
         public const string DiscountGroupsByStamp = DiscountGroups + "/bystamp";
         public const string CustomerDiscounts = "customerdiscounts";
         public const string CustomerDiscountsByStamp = CustomerDiscounts + "/bystamp";
-
     }
 }
