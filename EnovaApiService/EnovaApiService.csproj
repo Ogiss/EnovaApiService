@@ -186,6 +186,7 @@
     <Compile Include="Controllers\CommercialDocumentController.cs" />
     <Compile Include="Controllers\CustomerDiscountsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\DictionaryItemsController.cs" />
     <Compile Include="Controllers\DiscountGroupsController.cs" />
     <Compile Include="Controllers\DokumentyHandloweController.cs" />
     <Compile Include="Controllers\KontrahenciController.cs" />
@@ -207,6 +208,8 @@
     <Compile Include="Dto\Handel\PozycjaDokHanSaveDataDto.cs" />
     <Compile Include="Dto\Kasa\PlatnoscDto.cs" />
     <Compile Include="Dto\Kasa\SposobZaplatyDto.cs" />
+    <Compile Include="Enova\Dictionary\Repositories\DictionaryRepository.cs" />
+    <Compile Include="Enova\Dictionary\Repositories\IDictionaryRepository.cs" />
     <Compile Include="Enova\DiscountGroups\Repositories\DiscountGroupRepository.GetDiscountGroupFeatureDefs.cs" />
     <Compile Include="Enova\EnovaClient.cs" />
     <Compile Include="Enova\DiscountGroups\Repositories\DiscountGroupRepository.cs" />

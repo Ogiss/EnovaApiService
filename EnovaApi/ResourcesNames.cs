@@ -12,5 +12,7 @@
         public const string DiscountGroupsByStamp = DiscountGroups + "/bystamp";
         public const string CustomerDiscounts = "customerdiscounts";
         public const string CustomerDiscountsByStamp = CustomerDiscounts + "/bystamp";
+        public const string DictionaryItems = "dictionaryitems";
+        public const string DictionaryItemsDeleted = DictionaryItems + "/deleted";
     }
 }

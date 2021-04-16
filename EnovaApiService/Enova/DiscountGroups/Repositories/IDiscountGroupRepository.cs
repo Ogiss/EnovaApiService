@@ -1,5 +1,6 @@
 ﻿using EnovaApi.Models.Common;
 using EnovaApi.Models.DiscountGroup;
+using System;
 using System.Collections.Generic;
 
 namespace EnovaApiService.Enova.DiscountGroups.Repositories
