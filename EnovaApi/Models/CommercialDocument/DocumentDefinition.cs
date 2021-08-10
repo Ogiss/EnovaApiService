@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EnovaApi.Models.Common;
+﻿using EnovaApi.Models.Common;
 
 namespace EnovaApi.Models.CommercialDocument
 {

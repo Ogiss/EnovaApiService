@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using EnovaApi.Models.Common;
-using EnovaApi.Models.Customer;
 
 namespace EnovaApi.Models.CommercialDocument
 {

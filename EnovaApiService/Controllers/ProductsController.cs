@@ -22,26 +22,33 @@ namespace EnovaApiService.Controllers
         [HttpGet]
         [Route("api/" + ResourcesNames.Products + "/{productGuid}/" + ProductAssociationsNames.CustomerPrices + "/{customerGuid}")]
         public async Task<IHttpActionResult> GetPriceForCustomer(Guid productGuid, Guid customerGuid)
-        {
+        { 
             using (Session session = EnovaClient.Login.CreateSession(true, false))
             {
-                TowaryModule tm = TowaryModule.GetInstance(session);
-                CRMModule cm = CRMModule.GetInstance(session);
-                Towar towar = tm.Towary[productGuid];
-                Kontrahent kontrahent = cm.Kontrahenci[customerGuid];
-
-                var worker = new CenyKontrahentaWorker();
-                worker.Towar = towar;
-                worker.Kontrahent = kontrahent;
-                worker.DefinicjaCeny = tm.DefinicjeCen["Hurtowa"];
-
-                return Ok(new ProductPriceInfo
+                try
                 {
-                    ProductGuid = productGuid,
-                    CustomerGuid = customerGuid,
-                    Price = (decimal)worker.NettoPrzedRabatem.Value,
-                    Rebate = worker.Rabat
-                });
+                    TowaryModule tm = TowaryModule.GetInstance(session);
+                    CRMModule cm = CRMModule.GetInstance(session);
+                    Towar towar = tm.Towary[productGuid];
+                    Kontrahent kontrahent = cm.Kontrahenci[customerGuid];
+
+                    var worker = new CenyKontrahentaWorker();
+                    worker.Towar = towar;
+                    worker.Kontrahent = kontrahent;
+                    worker.DefinicjaCeny = tm.DefinicjeCen["Hurtowa"];
+
+                    return Ok(new ProductPriceInfo
+                    {
+                        ProductGuid = productGuid,
+                        CustomerGuid = customerGuid,
+                        Price = (decimal)worker.NettoPrzedRabatem.Value,
+                        Rebate = worker.Rabat
+                    });
+                }
+                catch(Exception ex)
+                {
+                    throw;
+                }
             }
         }
 

@@ -34,7 +34,10 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(d => d.PriceWithoutTaxAfterDiscount, o => o.MapFrom(s => s.CenaNettoPoRabacie.Value))
                     .ForMember(d => d.TaxPercent, o => o.MapFrom(s => (decimal)s.Stawka.Procent))
                     .ForMember(d => d.TaxName, o => o.MapFrom(s => s.Stawka.ToString()))
-                    .ForMember(d => d.TotalValueWithoutTax, o => o.MapFrom(s => s.Suma.Netto));
+                    .ForMember(d => d.TotalValueWithoutTax, o => o.MapFrom(s => s.Suma.Netto))
+                    .ForMember(d => d.CorrectionType, o => o.MapFrom(s => s.RodzajKorekty));
+
+                cfg.CreateMap<RodzajKorektyPozycji, PositionCorrectionType>().ConvertUsing<PositionCorrectionTypeConventer>();
 
                 cfg.CreateMap<SumaVAT, DocumentTaxRow>()
                     .ForMember(d => d.TaxName, o => o.MapFrom(s => s.DefinicjaStawki.Kod))
@@ -64,6 +67,20 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(d => d.TaxesSummary, o => o.MapFrom(s => s.SumyVAT))
                     .ForMember(d => d.PaymentSummary, o => o.MapFrom(s => s.Platnosci))
                     .ForMember(s => s.Description, o => o.MapFrom(s => s.Opis));
+            }
+
+            class PositionCorrectionTypeConventer : ITypeConverter<RodzajKorektyPozycji, PositionCorrectionType>
+            {
+                public PositionCorrectionType Convert(RodzajKorektyPozycji source, PositionCorrectionType destination, ResolutionContext context)
+                    => source switch
+                    {
+                        RodzajKorektyPozycji.Brak => PositionCorrectionType.None,
+                        RodzajKorektyPozycji.Ceny => PositionCorrectionType.Price,
+                        RodzajKorektyPozycji.Ilości => PositionCorrectionType.Quantity,
+                        RodzajKorektyPozycji.Zwrot => PositionCorrectionType.Return,
+                        RodzajKorektyPozycji.StawkiVAT => PositionCorrectionType.Tax,
+                        _ => PositionCorrectionType.Other
+                    };
             }
         }
     }
