@@ -58,6 +58,7 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(d => d.Date, o => o.MapFrom(s => s.Data))
                     .ForMember(s => s.OperationDate, o => o.MapFrom(s => s.DataOperacji))
                     .ForMember(d => d.DocumentNumber, o => o.MapFrom(s => s.Numer.NumerPelny))
+                    .ForMember(d => d.CorrectedDocument, o => o.MapFrom(s => s.DokumentKorygowany))
                     .ForMember(d => d.Customer, o => o.MapFrom(s => s.Kontrahent))
                     .ForMember(d => d.TotalValueWithoutTax, o => o.MapFrom(s => s.Suma.Netto))
                     .ForMember(d => d.TotalValueTax, o => o.MapFrom(s => s.Suma.VAT))

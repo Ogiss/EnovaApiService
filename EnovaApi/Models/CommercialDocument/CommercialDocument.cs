@@ -12,6 +12,7 @@ namespace EnovaApi.Models.CommercialDocument
         public DateTime OperationDate { get; set; }
         public string DocumentNumber { get; set; }
         public Customer.Customer Customer { get; set; }
+        public CommercialDocument CorrectedDocument { get; set; }
         public decimal TotalValueWithoutTax { get; set; }
         public decimal TotalValueTax { get; set; }
         public decimal TotalValueWithTax { get; set; }
