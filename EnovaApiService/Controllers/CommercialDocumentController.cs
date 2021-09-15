@@ -23,7 +23,8 @@ namespace EnovaApiService.Controllers
 
                 if (document != null)
                 {
-                    return Ok(document.ToDto());
+                    var ret = document.ToDto();
+                    return Ok(ret);
                 }
 
                 return NotFound();
