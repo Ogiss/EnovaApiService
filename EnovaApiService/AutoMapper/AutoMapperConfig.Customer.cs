@@ -23,7 +23,8 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(s => s.PaymentDeadlineInDays, o => o.MapFrom(s => s.Termin))
                     .ForMember(d => d.MainAddress, o => o.MapFrom(s => s.Adres))
                     .ForMember(d => d.WebAccount, o => o.ConvertUsing(new WebAccountConventer(), s => s))
-                    .ForMember(d => d.DiscountGroups, o => o.ConvertUsing(new DiscountGroupsConventer(), s => s));
+                    .ForMember(d => d.DiscountGroups, o => o.ConvertUsing(new DiscountGroupsConventer(), s => s))
+                    .ForMember(d => d.AgentPhone, o => o.MapFrom(s => s.Features["Telefon przedstawiciela"]));
             }
 
             public class WebAccountConventer : IValueConverter<Kontrahent, WebAccount>
@@ -46,7 +47,7 @@ namespace EnovaApiService.AutoMapper
                 {
                     var cenyGrupowe = (SubTable<CenaGrupowa>)sourceMember.CenyGrupowe;
 
-                    return cenyGrupowe.Where(x=> x.Grupa == null && x.GrupaTowarowa != null).Select(x => new EnovaApi.Models.Customer.Customer.DiscountGroup
+                    return cenyGrupowe.Where(x => x.Grupa == null && x.GrupaTowarowa != null).Select(x => new EnovaApi.Models.Customer.Customer.DiscountGroup
                     {
                         GroupId = x.GrupaTowarowa.ID,
                         GroupGuid = x.GrupaTowarowa.Guid,

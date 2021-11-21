@@ -14,6 +14,7 @@ namespace EnovaApi.Models.Customer
         public WebAccount WebAccount { get; set; }
         public Address.Address MainAddress { get; set; }
         public DiscountGroup[] DiscountGroups { get; set; }
+        public string AgentPhone { get; set; }
 
         public class DiscountGroup
         {
