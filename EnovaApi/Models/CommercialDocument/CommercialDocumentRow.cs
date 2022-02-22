@@ -16,6 +16,7 @@ namespace EnovaApi.Models.CommercialDocument
         public decimal TaxPercent { get; set; }
         public string TaxName { get; set; }
         public decimal TotalValueWithoutTax { get; set; }
+        public decimal TotalCorrectionValueWithoutTax { get; set; }
         public PositionCorrectionType CorrectionType { get; set; }
         public string QuantityFormated => $"{Quantity:#.##} {QuantityUnit}";
         public string QuantityTurnoverFormated => $"{QuantityTurnover:#.##} {QuantityTurnoverUnit}";

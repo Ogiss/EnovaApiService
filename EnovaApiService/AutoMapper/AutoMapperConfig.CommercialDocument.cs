@@ -34,7 +34,9 @@ namespace EnovaApiService.AutoMapper
                     .ForMember(d => d.PriceWithoutTaxAfterDiscount, o => o.MapFrom(s => s.CenaNettoPoRabacie.Value))
                     .ForMember(d => d.TaxPercent, o => o.MapFrom(s => (decimal)s.Stawka.Procent))
                     .ForMember(d => d.TaxName, o => o.MapFrom(s => s.Stawka.ToString()))
-                    .ForMember(d => d.TotalValueWithoutTax, o => o.MapFrom(s => s.Suma.Netto))
+                    .ForMember(d => d.TotalValueWithoutTax, o => o.MapFrom(s => s.WartoscCy.Value))
+                    .ForMember(d => d.TotalCorrectionValueWithoutTax,
+                        o => o.MapFrom(s => s.PozycjaKorygowana != null ? s.PozycjaKorygowana.WartoscCy.Value : 0M))
                     .ForMember(d => d.CorrectionType, o => o.MapFrom(s => s.RodzajKorekty));
 
                 cfg.CreateMap<RodzajKorektyPozycji, PositionCorrectionType>().ConvertUsing<PositionCorrectionTypeConventer>();
